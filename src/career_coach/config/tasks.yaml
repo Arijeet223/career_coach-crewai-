@@ -1,0 +1,20 @@
+# tasks.yaml
+analyze_resume:
+  description: Parse the resume, extract skills, experiences, and achievements to create a profile summary.
+  agent: resume_analyzer
+  expected_output: JSON summary of skills, experiences, and strengths.
+
+match_skills:
+  description: Compare the resume profile with high-demand career tracks and highlight gaps.
+  agent: skill_matcher
+  expected_output: A list of matched careers and missing skills.
+
+scan_job_market:
+  description: Find trending job roles in AI, software engineering, and related fields based on the resume profile.
+  agent: job_market_scanner
+  expected_output: List of top 5 trending job titles with a short description and salary range.
+
+recommend_career_path:
+  description: Suggest a personalized career path and courses to bridge skill gaps, formatted in bullet points.
+  agent: career_recommendation
+  expected_output: A clear career roadmap with suggested courses and actionable steps.
